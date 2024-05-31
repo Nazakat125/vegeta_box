@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="Vegeta Box"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vegeta_box"
+        tools:targetApi="31">
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ShopkeeperShowOrder"
+            android:exported="false" />
+        <activity
+            android:name=".ShopkeeperRecivedOrderGroupsList"
+            android:exported="false" />
+        <activity
+            android:name=".customerCart"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerViewProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerAllProductsList"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerAllShopsKeeprsList"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerGroups"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ShopKeeperProductsDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ShopKeeperShowAllProduct"
+            android:exported="false" />
+        <activity
+            android:name=".AddProducts"
+            android:exported="false" />
+        <activity
+            android:name=".ShopkeeperDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAllShops"
+            android:exported="false" />
+        <activity
+            android:name=".AdminShopsAdd"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerRegistration"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ShopRegister"
+            android:exported="false" />
+        <activity
+            android:name=".ShopLogIn"
+            android:exported="false" />
+        <activity
+            android:name=".WellcomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

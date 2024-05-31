@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShopkeeperShowOrder">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopkeeper_cart_recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="240dp"
+        tools:listitem="@layout/shopkeeper_order_list"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Group Name:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_cart_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Maxi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Group Area:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_cart_group_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Maxi"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bill_contaner"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:backgroundTint="#4CAF50"
+            android:background="@drawable/button_shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Sub Total"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_cart_sub_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Delivery Charges"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_cart_group_delivery_charges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Total"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_cart_group_total_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/shopkeeper_cart_group_delivery_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Deliver Order"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#4CAF50"
+            android:textStyle="bold"
+            android:background="@drawable/button_shape"/>
+    </LinearLayout>
+</RelativeLayout>

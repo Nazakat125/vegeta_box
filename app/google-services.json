@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "135881123620",
+    "firebase_url": "https://vegeta-box-default-rtdb.firebaseio.com",
+    "project_id": "vegeta-box",
+    "storage_bucket": "vegeta-box.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135881123620:android:aca605343a325333cdb5b1",
+        "android_client_info": {
+          "package_name": "com.example.vegeta_box"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5L8C0ZXdhHeo6oNwBby62S7Lve-HWVaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

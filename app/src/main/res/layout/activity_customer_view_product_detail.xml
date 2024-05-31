@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerViewProductDetail">
+    <ImageView
+        android:id="@+id/customer_view_products_details_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/a22"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/product_detail"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/customer_view_products_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Potatos"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/customer_view_products_details_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20 RS(per kg)"
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Description"
+            android:textColor="#625D5D"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/customer_view_products_details_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Tomatoes are loaded with a substance called lycopene. It gives them their bright red color and helps protect them from the ultraviolet rays of the sun. In much the same way, it can help protect your cells from damage. Tomatoes also have potassium, vitamins B and E, and other nutrients. more. "
+            android:textColor="#625D5D"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customer_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add to Cart"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:background="@drawable/button_shape"/>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/edit_text_shape"
+    app:cardCornerRadius="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:orientation="horizontal">
+        
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/shopkeeper_order_image"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:src="@drawable/a22"
+            android:scaleType="fitXY"
+            android:background="@drawable/button_shape"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="140dp"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/shopkeeper_order_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Mango"
+                android:textColor="#000000"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Price:"
+                    android:paddingRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_order_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Total Item"
+                    android:paddingRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/shopkeeper_order_total_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

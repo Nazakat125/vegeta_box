@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerAllShopsKeeprsList">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4CAF50"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Group Name:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/custmer_group_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Maxi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Group Area:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/custmer_group_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Maxi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/custmer_cart_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/cart_icon"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:text="All Shops"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/custmer_all_shops_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/show_all_shops"/>
+
+    </LinearLayout>
+</ScrollView>
